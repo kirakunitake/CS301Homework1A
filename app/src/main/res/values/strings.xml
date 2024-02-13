@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Homework 1A</string>
+
+    /**
+    External Citation
+        Date: February 11, 2024
+        Problem: could not create spinner options in the hair style spinner
+        Resource: https://www.youtube.com/watch?v=6sLCLMXEWds
+        Solution: Used instructions to create an array of spinner options.
+        Changed spinnerMode to dialog and entered the spinner options array
+        in entries.
+    */
+    <string-array name="hairStyles">
+        <item>Straight</item>
+        <item>Curly</item>
+        <item>Braided</item>
+    </string-array>"
+    
+</resources>
