@@ -99,18 +99,18 @@ public class EventHandler implements SeekBar.OnSeekBarChangeListener,
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         if (isChecked) {
             //see which feature button was checked
-            if (buttonView.getId() == hair) {
+            if (buttonView.getId() == eyes) {
                 //use getter method to get rgb values of the feature
                 // and place them into new array
-                int[] hairColor = face.getHair();
-                //use helper method to set rgb value on seek bars
-                updateSeekBar(hairColor[0], hairColor[1], hairColor[2]);
-                //make buttonClicked equal to the button clicked
-                buttonClicked = hair;
-            } else if (buttonView.getId() == eyes) {
                 int[] eyeColor = face.getEyes();
+                //use helper method to set rgb value on seek bars
                 updateSeekBar(eyeColor[0], eyeColor[1], eyeColor[2]);
+                //make buttonClicked equal to the button clicked
                 buttonClicked = eyes;
+            } else if (buttonView.getId() == hair) {
+                int[] hairColor = face.getHair();
+                updateSeekBar(hairColor[0], hairColor[1], hairColor[2]);
+                buttonClicked = hair;
             } else if (buttonView.getId() == skin) {
                 int[] skinColor = face.getSkin();
                 updateSeekBar(skinColor[0], skinColor[1], skinColor[2]);

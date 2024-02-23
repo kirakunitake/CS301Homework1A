@@ -149,6 +149,8 @@ public class Face extends SurfaceView{
     //set hair color
     public void setHairColor(int color){
         this.hairColor = color;
+        hairPaint.setColor(hairColor);
+        invalidate();
     }
     //set eye color
     public void setEyeColor(int color){
